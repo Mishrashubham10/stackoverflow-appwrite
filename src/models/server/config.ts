@@ -1,5 +1,5 @@
 // =========== ENV VARIABLES ============
-import env from '@/env';
+import env from '@/app/env';
 
 // =========== APPWRITE ============
 import { Client, Avatars, Databases, Storage, Users } from 'node-appwrite';
@@ -11,13 +11,10 @@ const client = new Client()
 
 // ======== APPWRITE DATABASES INSTANCES ==========
 const databases = new Databases(client);
-
 // ======== APPWRITE ACCOUNT ==========
 const users = new Users(client);
-
 // ======== APPWRITE AVATARS CREATION ==========
 const avatars = new Avatars(client);
-
 // ======== APPWRITE STORAGE CREATION ==========
 const storage = new Storage(client);
 

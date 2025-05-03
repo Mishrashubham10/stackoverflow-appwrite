@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // ========== NODE APPWRITE ============
-import { IndexType, Permission } from 'node-appwrite';
+import { Permission } from 'node-appwrite';
 
 // ========== NAME ============
 import { db, answerCollection } from '../name';

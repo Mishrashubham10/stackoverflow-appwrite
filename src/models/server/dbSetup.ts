@@ -17,10 +17,10 @@ export default async function getOrCreateDB() {
       console.log('database created');
       // CREATE COLLECTIONS
       await Promise.all([
-        createQuestionCollection,
-        createAnswerCollection,
-        createCommentCollection,
-        createVoteCollection,
+        createQuestionCollection(),
+        createAnswerCollection(),
+        createCommentCollection(),
+        createVoteCollection(),
       ]);
       console.log('Collection created!');
       console.log('Database connected!');
